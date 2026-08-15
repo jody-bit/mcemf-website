@@ -12,7 +12,12 @@ footer{padding:36px 0 42px;text-align:center;color:rgba(255,255,255,.74)} .credi
 @media(max-width:860px){.hero,.partners{grid-template-columns:1fr}.poster-card{max-width:480px;margin:0 auto}.lineup-grid,.info-strip,.presented-grid,.partnership-grid{grid-template-columns:1fr}.nav-inner{align-items:flex-start;flex-direction:column}.logo-link{min-height:124px}}
 .artists-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px} .artist-card{border:2px solid rgba(255,138,31,.4);border-radius:20px;padding:22px;background:linear-gradient(180deg,rgba(23,17,51,.88),rgba(23,17,51,.56))} .artist-card h3{margin:0 0 8px;color:var(--gold);font-size:1.15rem;letter-spacing:.03em} .artist-card .bio{margin:0 0 14px;font-size:.92rem;line-height:1.55;color:rgba(255,255,255,.82)} .artist-links{display:flex;gap:14px;flex-wrap:wrap} .artist-links a{font-size:.8rem;font-weight:800;text-transform:uppercase;letter-spacing:.05em;color:var(--lavender);text-decoration:none;border-bottom:1px solid transparent} .artist-links a:hover{border-color:var(--lavender)}
 @media(max-width:860px){.artists-grid{grid-template-columns:1fr}}
-.city-banner{display:block;width:100%;max-width:1100px;margin:0 auto 34px;border-radius:20px;overflow:hidden} .city-banner img{display:block;width:100%;height:auto}
+.skyline-header{position:relative;overflow:hidden;padding:56px 0 30px;text-align:center;min-height:230px;display:flex;align-items:center;justify-content:center}
+.skyline-side{position:absolute;top:50%;transform:translateY(-50%);height:230px;width:auto;max-width:46vw;opacity:.65;pointer-events:none}
+.skyline-left{left:0;-webkit-mask-image:linear-gradient(to right,black 45%,transparent 92%);mask-image:linear-gradient(to right,black 45%,transparent 92%)}
+.skyline-right{right:0;-webkit-mask-image:linear-gradient(to left,black 45%,transparent 92%);mask-image:linear-gradient(to left,black 45%,transparent 92%)}
+.skyline-header-text{position:relative;z-index:2}
+@media(max-width:760px){.skyline-header{padding:32px 0 16px;min-height:0} .skyline-side{display:none}}
 .schedule-wrap{border:2px solid rgba(255,138,31,.5);border-radius:20px;overflow:hidden;background:rgba(8,4,18,.62);box-shadow:0 24px 70px rgba(0,0,0,.32);margin-bottom:22px}
 table.schedule{width:100%;border-collapse:collapse;font-size:.95rem}
 table.schedule th,table.schedule td{padding:13px 14px;text-align:left;border-bottom:1px solid rgba(255,255,255,.08)}
