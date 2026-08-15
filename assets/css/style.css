@@ -54,3 +54,8 @@ table.schedule td.empty{color:rgba(255,255,255,.25)}
 .stage-section.discovery .stage-section-head h2{color:var(--lavender)}
 .artist-card .time{display:inline-block;font-family:"Press Start 2P",monospace;font-size:.6rem;color:var(--gold);margin-bottom:8px;letter-spacing:.03em}
 @media(max-width:860px){.artists-grid{grid-template-columns:1fr} table.schedule{font-size:.82rem} table.schedule th,table.schedule td{padding:9px 8px} table.schedule thead th{font-size:.56rem}}
+@keyframes nowPlayingPulse{0%,100%{box-shadow:0 0 0 rgba(255,138,31,0)}50%{box-shadow:0 0 18px rgba(255,138,31,.55)}}
+.now-playing-cell{position:relative;background:rgba(255,138,31,.14) !important}
+.now-playing-cell a{animation:nowPlayingPulse 2s ease-in-out infinite;border-radius:6px;padding:2px 6px;margin:-2px -6px}
+.now-playing-card{border-color:var(--orange) !important;animation:nowPlayingPulse 2.4s ease-in-out infinite}
+.now-playing-badge{display:block;width:max-content;background:linear-gradient(90deg,var(--magenta),var(--orange));color:white;font-family:"Press Start 2P",monospace;font-size:.55rem;text-transform:uppercase;letter-spacing:.03em;padding:5px 9px;border-radius:999px;margin-bottom:10px}
