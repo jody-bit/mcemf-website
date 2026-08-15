@@ -12,3 +12,40 @@ footer{padding:36px 0 42px;text-align:center;color:rgba(255,255,255,.74)} .credi
 @media(max-width:860px){.hero,.partners{grid-template-columns:1fr}.poster-card{max-width:480px;margin:0 auto}.lineup-grid,.info-strip,.presented-grid,.partnership-grid{grid-template-columns:1fr}.nav-inner{align-items:flex-start;flex-direction:column}.logo-link{min-height:124px}}
 .artists-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px} .artist-card{border:2px solid rgba(255,138,31,.4);border-radius:20px;padding:22px;background:linear-gradient(180deg,rgba(23,17,51,.88),rgba(23,17,51,.56))} .artist-card h3{margin:0 0 8px;color:var(--gold);font-size:1.15rem;letter-spacing:.03em} .artist-card .bio{margin:0 0 14px;font-size:.92rem;line-height:1.55;color:rgba(255,255,255,.82)} .artist-links{display:flex;gap:14px;flex-wrap:wrap} .artist-links a{font-size:.8rem;font-weight:800;text-transform:uppercase;letter-spacing:.05em;color:var(--lavender);text-decoration:none;border-bottom:1px solid transparent} .artist-links a:hover{border-color:var(--lavender)}
 @media(max-width:860px){.artists-grid{grid-template-columns:1fr}}
+.city-banner{display:block;width:100%;max-width:1100px;margin:0 auto 34px;border-radius:20px;overflow:hidden} .city-banner img{display:block;width:100%;height:auto}
+.schedule-wrap{border:2px solid rgba(255,138,31,.5);border-radius:20px;overflow:hidden;background:rgba(8,4,18,.62);box-shadow:0 24px 70px rgba(0,0,0,.32);margin-bottom:22px}
+table.schedule{width:100%;border-collapse:collapse;font-size:.95rem}
+table.schedule th,table.schedule td{padding:13px 14px;text-align:left;border-bottom:1px solid rgba(255,255,255,.08)}
+table.schedule thead th{font-family:"Press Start 2P",monospace;font-size:.68rem;text-transform:uppercase;letter-spacing:.03em;padding:16px 14px}
+table.schedule thead th.time-col{color:rgba(255,255,255,.6);background:rgba(255,255,255,.04)}
+table.schedule thead th.main-col{color:var(--orange);background:rgba(255,138,31,.12)}
+table.schedule thead th.corridor-col{color:var(--cream);background:rgba(248,228,181,.1)}
+table.schedule thead th.discovery-col{color:var(--lavender);background:rgba(164,139,255,.12)}
+table.schedule tbody td.time-col{font-weight:700;color:rgba(255,255,255,.55);white-space:nowrap;font-size:.85rem}
+table.schedule tbody tr:nth-child(even){background:rgba(255,255,255,.025)}
+table.schedule tbody tr:last-child td{border-bottom:none}
+table.schedule td a{text-decoration:none;font-weight:700;border-bottom:1px solid transparent}
+table.schedule td.main-col a{color:var(--orange)}
+table.schedule td.corridor-col a{color:var(--cream)}
+table.schedule td.discovery-col a{color:var(--lavender)}
+table.schedule td a:hover{border-bottom-color:currentColor}
+table.schedule td.empty{color:rgba(255,255,255,.25)}
+.schedule-meta{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;margin:0 0 44px;font-size:.85rem;color:rgba(255,255,255,.68)}
+.schedule-meta .jump a{color:var(--gold);text-decoration:none;font-weight:700;border-bottom:1px solid transparent}
+.schedule-meta .jump a:hover{border-bottom-color:var(--gold)}
+.schedule-meta .jump span{margin:0 8px;opacity:.5}
+.equalizer-divider{display:block;width:100%;max-width:1100px;margin:6px auto 6px;height:auto}
+.equalizer-divider img{display:block;width:100%;height:auto}
+.meet-artists-head{text-align:center;margin:8px 0 36px}
+.meet-artists-head h2{margin:0}
+.back-to-top{font-size:.78rem;font-weight:700;color:var(--lavender);text-decoration:none;text-transform:uppercase;letter-spacing:.04em;border-bottom:1px solid transparent}
+.back-to-top:hover{border-bottom-color:var(--lavender)}
+.stage-section{margin-bottom:52px} .stage-section:last-child{margin-bottom:0}
+.stage-section-head{display:flex;align-items:baseline;justify-content:space-between;gap:14px;margin-bottom:22px;padding-bottom:10px;border-bottom:2px solid rgba(255,255,255,.14)}
+.stage-section-head h2{margin:0;font-family:"Press Start 2P",monospace;font-size:clamp(1.1rem,2.6vw,1.7rem);text-transform:uppercase;line-height:1.2}
+.stage-section-head .stage-time{font-size:.8rem;font-weight:700;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:.04em;white-space:nowrap}
+.stage-section.corridor .stage-section-head h2{color:var(--cream)}
+.stage-section.main .stage-section-head h2{color:var(--orange)}
+.stage-section.discovery .stage-section-head h2{color:var(--lavender)}
+.artist-card .time{display:inline-block;font-family:"Press Start 2P",monospace;font-size:.6rem;color:var(--gold);margin-bottom:8px;letter-spacing:.03em}
+@media(max-width:860px){.artists-grid{grid-template-columns:1fr} table.schedule{font-size:.82rem} table.schedule th,table.schedule td{padding:9px 8px} table.schedule thead th{font-size:.56rem}}
