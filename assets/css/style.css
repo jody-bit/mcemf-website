@@ -59,3 +59,8 @@ table.schedule td.empty{color:rgba(255,255,255,.25)}
 .now-playing-cell a{animation:nowPlayingPulse 2s ease-in-out infinite;border-radius:6px;padding:2px 6px;margin:-2px -6px}
 .now-playing-card{border-color:var(--orange) !important;animation:nowPlayingPulse 2.4s ease-in-out infinite}
 .now-playing-badge{display:block;width:max-content;background:linear-gradient(90deg,var(--magenta),var(--orange));color:white;font-family:"Press Start 2P",monospace;font-size:.55rem;text-transform:uppercase;letter-spacing:.03em;padding:5px 9px;border-radius:999px;margin-bottom:10px}
+.afterparty-tagline{text-align:center;margin:26px 0 6px;font-weight:800;letter-spacing:.04em;color:var(--magenta);font-size:1.05rem}
+.afterparty-address{text-align:center;margin:0;color:rgba(255,255,255,.68);font-size:.95rem}
+.map-card{max-width:640px;margin:0 auto;border:2px solid rgba(255,138,31,.5);border-radius:20px;overflow:hidden;box-shadow:0 24px 70px rgba(0,0,0,.42)} .map-card img{display:block;width:100%;height:auto}
+#map img{max-width:640px;width:100%;height:auto;display:block;margin:0 auto}
+.map-legend{display:flex;flex-wrap:wrap;justify-content:center;gap:22px;margin-top:22px;font-size:.85rem;font-weight:700;color:rgba(255,255,255,.82)} .map-legend span{display:flex;align-items:center;gap:8px} .map-legend .sep{color:rgba(255,255,255,.3);font-weight:400} .dot{width:14px;height:14px;border-radius:50%;display:inline-block} .dot.main{background:#E91E8C} .dot.corridor{background:var(--orange)} .dot.discovery{background:#5B2E8F} .dot.lot{background:#C9B79C}
